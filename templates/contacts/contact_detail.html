@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Contact Details</h1>
+
+    <h3>{{ object.first_name }}&nbsp;{{ object.last_name }}</h3>
+    <p>Email: {{ object.email }}</p>
+    <p>Address: {{ object.address }}</p>
+    <p>City: {{ object.city }}</p>
+    <p>State: {{ object.state }}</p>
+    <p>Zip: {{ object.zip }}</p>
+    <p>Phone: {{ object.phone }}</p>
+    <a class="button button-primary" href="{% url 'contact_list' %}">Back</a>
+{% endblock %}
