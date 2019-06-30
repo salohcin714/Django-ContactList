@@ -1,0 +1,1 @@
+web: gunicorn WEBD445.wsgi
